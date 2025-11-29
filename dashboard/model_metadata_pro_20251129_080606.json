@@ -1,0 +1,22 @@
+{
+  "model_info": {
+    "best_model": "GradientBoosting",
+    "best_strategy": "smote",
+    "timestamp": "20251129_080606",
+    "features_count": 23
+  },
+  "performance": {
+    "cv_auc": 0.6736965671063888,
+    "cv_f1": 0.15624376392860917,
+    "test_auc": 0.6784278557741674,
+    "test_f1": 0.15682656826568267,
+    "test_precision": 0.5172413793103449,
+    "test_recall": 0.09242479159115621
+  },
+  "training_info": {
+    "train_size": 80000,
+    "test_size": 20000,
+    "churn_rate": 0.2759125,
+    "scale_pos_weight": 2.6243374258143435
+  }
+}

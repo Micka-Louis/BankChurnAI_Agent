@@ -4,15 +4,17 @@ numpy
 scikit-learn
 joblib
 
+# Dépendances de Visualisation (Manquantes)
+matplotlib     # Base pour seaborn, nécessaire même si seaborn est importé
+seaborn        # <-- AJOUTÉ pour corriger 'ModuleNotFoundError: No module named 'seaborn''
+
 # Dépendances AI/ML spécifiques
 catboost
-# Si vous utilisez PyTorch pour CatBoost ou d'autres modèles :
-torch 
-# Les dépendances langchain
+torch          # Nécessaire pour les dépendances de CatBoost/ML complexes
 langchain
 langchain-core
 langchain-community
 langchain-openai
 openai
-tiktoken # Crucial pour OpenAI et Langchain
+tiktoken       # Crucial pour l'utilisation d'OpenAI/Langchain
 requests

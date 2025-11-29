@@ -1,20 +1,23 @@
 streamlit
 pandas
 numpy
-scikit-learn
+# Version fixée pour correspondre à votre modèle local:
+scikit-learn==1.6.1 
+
 joblib
+# Ajouté pour corriger "No module named 'seaborn'":
+seaborn
+# Ajouté pour corriger "No module named 'imblearn'":
+imbalanced-learn
 
-# Dépendances de Visualisation (Manquantes)
-matplotlib     # Base pour seaborn, nécessaire même si seaborn est importé
-seaborn        # <-- AJOUTÉ pour corriger 'ModuleNotFoundError: No module named 'seaborn''
-
-# Dépendances AI/ML spécifiques
+matplotlib
+# Dépendances AI/ML
 catboost
-torch          # Nécessaire pour les dépendances de CatBoost/ML complexes
+torch
 langchain
 langchain-core
 langchain-community
 langchain-openai
 openai
-tiktoken       # Crucial pour l'utilisation d'OpenAI/Langchain
+tiktoken
 requests
